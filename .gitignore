@@ -1,5 +1,2 @@
-.env
 node_modules
-samtl_file_bank
 package-lock.json
-staging.env

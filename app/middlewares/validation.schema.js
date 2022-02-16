@@ -21,22 +21,6 @@ const validationSchemas = {
 		username: Joi.string().label('Username').min(3).max(30).required(),
 		password: Joi.string().label('Password').min(3).max(30).required()
 	}),
-	// update profile endpoint validation schema
-	userUpdate: Joi.object({
-		id: JoiOid.objectId().label('ID').required(),
-		firstName: Joi.string().label('First Name').alphanum().min(3).max(30),
-		lastName: Joi.string().label('Last Name').alphanum().min(3).max(30),
-		password: Joi.string().label('Password').min(3).max(30),
-		phoneNumber: Joi.string().regex(/^[0-9]{10}$/)
-	}).unknown(),
-	// search users endpoints validation schema
-	userFind: Joi.object({
-		id: JoiOid.objectId().label('ID'),
-		firstName: Joi.string().label('First Name'),
-		lastName: Joi.string().label('Last Name'),
-		username: Joi.string().label('Username'),
-		phoneNumber: Joi.string().regex(/^[0-9]{10}$/)
-	}),
 	// add product endpoint validation schema
 	productAdd: Joi.object({
 		sku: Joi.string().label('SKU').required(),

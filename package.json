@@ -6,7 +6,8 @@
   "author": "Kalio Sobomabo",
   "scripts": {
     "test": "mocha app/test/* --reporter spec",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "staging": "node server.js"
   },
   "keywords": [
     "nodejs",
