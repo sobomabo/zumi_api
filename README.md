@@ -172,4 +172,4 @@ This is install all the project depencencies
 ```bash
   npm run staging
 ```
-This is will spin up an instance of the API ready to receive requests
+This is will spin up an instance of the API ready to receive requests. The API is exposed on port 3001.
