@@ -1,0 +1,40 @@
+{
+  "name": "zumi_api",
+  "version": "1.0.0",
+  "description": "ZUMI technical challenge - backend API",
+  "main": "server.js",
+  "author": "Kalio Sobomabo",
+  "scripts": {
+    "test": "mocha app/test/* --reporter spec",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "mongodb"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "faker": "^6.6.6",
+    "joi-oid": "^1.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.8.10"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.6",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.0",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "nyc": "^15.1.0"
+  }
+}
