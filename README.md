@@ -173,3 +173,9 @@ To install all the API depencencies
   npm run staging
 ```
 This is will spin up an instance of the API ready to receive requests, The API is exposed on port 3001.
+
+Run the command bellow to seed the database with dummy data, a list of users (vendors) with their passwords will be print in the console for test.
+
+```bash
+  node seedDB.js
+```
